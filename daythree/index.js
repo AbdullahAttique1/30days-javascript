@@ -88,6 +88,36 @@ if(num1 == num2 && num1 == num3){
     
     
     
+    //  task 4
+
+
     
-    
+ let day=7
+
+ switch (day){
+case(1)  : ( console.log("Monday"))
+break;
+
+case (2) : console.log("Tuesday");
+break;
+
+case(3)  : ( console.log("WednesDay"))
+break;
+
+case (4) : console.log("ThursDay");
+break;
+
+
+case (5) : console.log("Friday");
+break;
+
+case(6)  : ( console.log("SaturDay"))
+break;
+
+case (7) : console.log("Sunday");
+break;
+
+
+ }
+
  
