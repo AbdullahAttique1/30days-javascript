@@ -18,6 +18,7 @@ let thirdlet=true
 let fourthlet=["object"]
 let fifthlet=new Array("hellow","itsarray","isitworking")
 
+
 console.log(typeof firstlet);
 console.log(typeof seconslet);
 console.log(typeof thirdlet);
