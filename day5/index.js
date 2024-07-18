@@ -1,11 +1,11 @@
 // Task 1
 function evenorodd(num) {
-        if(num % 2 ==0){
-            console.log("Its a Even Number");
-        }else{
-            
-            console.log("Its a Odd Number");
-        }
+    if (num % 2 == 0) {
+        console.log("Its a Even Number");
+    } else {
+
+        console.log("Its a Odd Number");
+    }
 }
 
 
@@ -15,141 +15,141 @@ evenorodd(53)
 
 //TAsk 2
 
-function SquareNumber(num){
-    const square=num * num
+function SquareNumber(num) {
+    const square = num * num
     console.log(square);
-return square
+    return square
 }
 SquareNumber(5)
 
 //Task 3
 
-const maxteonum=function (num1,num2) {
+const maxteonum = function (num1, num2) {
 
-if(num1 > num2){
-    console.log("Num1 is grater",num1);
-}else{
-    console.log("Num2 is grater",num2);
+    if (num1 > num2) {
+        console.log("Num1 is grater", num1);
+    } else {
+        console.log("Num2 is grater", num2);
+
+    }
+
+    console.log(num1, num2);
 
 }
-
-    console.log(num1,num2);
-    
-}
-maxteonum(25,26)
+maxteonum(25, 26)
 
 
 // Task 4
-const concatetosting=function(str1,str2){
+const concatetosting = function (str1, str2) {
 
     let result = str1.concat(str2)
 
-    
+
 
     return result
-    
+
 
 }
 
-const resconcarstrin=concatetosting("ABd","Ullah")
+const resconcarstrin = concatetosting("ABd", "Ullah")
 console.log(resconcarstrin);
 
 // Task 5
 
-const sumoftwo=(sum1,sum2) => {
+const sumoftwo = (sum1, sum2) => {
 
-    let result=sum1+sum2
+    let result = sum1 + sum2
     console.log(result);
     return result
 }
-sumoftwo(56,58)
+sumoftwo(56, 58)
 
 // Task 6
 
-const checkconstr=(str) => {
+const checkconstr = (str) => {
 
-let check=str.includes("a")
+    let check = str.includes("a")
 
 
- return check
+    return check
 
- }
+}
 
- const checkvalue=checkconstr("Sardar")
- console.log(checkvalue);
+const checkvalue = checkconstr("Sardar")
+console.log(checkvalue);
 
- // Task 7
+// Task 7
 
- const sumoftwopara=(sum1,sum2) => {
+const sumoftwopara = (sum1, sum2) => {
 
-    sum2=56
-    let result=sum1+sum2
-  
+    sum2 = 56
+    let result = sum1 + sum2
+
     return result
 }
-const ressumoft=sumoftwopara(56,)
+const ressumoft = sumoftwopara(56,)
 console.log(ressumoft);
 
 // Task 8
 
-const person=(name,age) => {
-    age=26
-const message=`Hello! Welcome ${name} to my page. I hope ${name} find what you're looking for and enjoy your visit. Have a great day`     
+const person = (name, age) => {
+    age = 26
+    const message = `Hello! Welcome ${name} to my page. I hope ${name} find what you're looking for and enjoy your visit. Have a great day`
 
-return message;
+    return message;
 
 }
-const ressperson=person("Abdullah")
+const ressperson = person("Abdullah")
 console.log(ressperson);
 
 // Task 9
 
 
 
-function HigherOrder(Hello,number){
-    for(let t=1; t<=number; t++){
+function HigherOrder(Hello, number) {
+    for (let t = 1; t <= number; t++) {
         Hello()
     }
-  
+
 }
 
 
-function Hello(){
+function Hello() {
     console.log("Hellow worlkd");
 }
 
-HigherOrder(Hello ,5)
+HigherOrder(Hello, 5)
 
 
 
 // Task 9
 
-function HigherOrdersec(firstfun,secfun,val){
+function HigherOrdersec(firstfun, secfun, val) {
 
 
 
- const firstres= firstfun(val)
+    const firstres = firstfun(val)
 
-const secondresult=secfun(firstres)
-   
-return secondresult
-   
+    const secondresult = secfun(firstres)
+
+    return secondresult
+
 
 }
 
-function firstfun(val){
+function firstfun(val) {
     console.log(val);
 
-    return val *2
+    return val * 2
 }
 
-function secondfunction(firstres){
+function secondfunction(firstres) {
 
-    return firstres *5
- 
+    return firstres * 5
+
 }
 
-const myres=HigherOrdersec(firstfun,secondfunction,8)
+const myres = HigherOrdersec(firstfun, secondfunction, 8)
 
 console.log(myres);
 
