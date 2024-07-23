@@ -100,10 +100,75 @@ input.addEventListener('keyup', () => {
 
 // task 7
 
-const btnsub = document.getElementById("submit");
-const inputele = document.getElementById("text");
+
+
+    const btnsub = document.getElementById("submit")
+const inputele = document.getElementById("text")
 
 btnsub.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevents the form from submitting
-    console.log(inputele.value); // Logs the current value of the input field
+    event.preventDefault(); 
+    console.log(inputele.value); 
 });
+
+
+// task 8
+
+
+
+const studentsele = document.getElementById('students')
+const displayParagraph = document.getElementById('display')
+
+studentsele.addEventListener('change' , function() 
+ {
+
+
+    displayParagraph.textContent = `Selected value: ${this.value}`
+
+});
+/// TAsk 9
+
+let selectedTd;
+
+const liele=document.getElementsByTagName("li")
+
+
+for (let index = 0; index < liele.length; index++) {
+    const element = liele[index];
+
+
+    element.onclick = function(event) {
+        let target = event.target; 
+      
+     
+        console.log(target.innerHTML);
+
+      
+     
+      };
+      
+    
+      }
+      
+      // Task 10
+
+
+      const parantdiv=document.getElementsByClassName("parrent")
+
+ 
+for (let index = 0; index < parantdiv.length; index++) {
+    const element = parantdiv[index];
+    element.onclick=function (event) {
+        const childiv=document.createElement("div")
+              childiv.innerHTML="Cild div"
+      
+              element.appendChild(childiv)
+              element.classList.add("child");
+             }
+
+    
+}
+
+
+
+
+
