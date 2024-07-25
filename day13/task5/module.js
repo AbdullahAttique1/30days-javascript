@@ -1,6 +1,6 @@
 // Constants
-const PI = 3.14159;
-const E = 2.71828;
+const pi = 3.14159;
+const e = 2.71828;
 
 
  function add(a, b) {
@@ -27,8 +27,8 @@ const E = 2.71828;
 
 
 module.exports = {
-    PI,
-    E,
+    pi,
+    e,
     add,
     minus,
     multi,
